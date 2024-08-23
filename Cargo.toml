@@ -1,0 +1,18 @@
+[package]
+name = "ruscikit"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "ruscikit"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ruscikit_example"
+path = "src/main.rs"
+
+[dependencies]
+ndarray = { version = "0.15.6", features = ["blas"] }
+ndarray-linalg = { version = "0.16", features = ["openblas-static"] }
+rand = "0.8.5"
+rand_chacha = "0.3.1"
